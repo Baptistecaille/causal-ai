@@ -1,0 +1,19 @@
+[project]
+name = "causal-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy<1.24", 
+    # Actually, let's just add causalnex and let the resolver handle it, but numpy 2.3.5 seems very high (numpy 2.0 is new). 
+    # Most libs don't support numpy 2.0 yet.
+    # I will stick to what the user had but add causalnex.
+    "causalnex",
+    "pandas",
+    "networkx",
+    "scikit-learn",
+    "scipy>=1.10",
+
+
+]
